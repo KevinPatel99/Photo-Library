@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.LoginWindowController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane fx:id="rootPane" prefHeight="476.0" prefWidth="614.0">
+            <children>
+                <Button fx:id="loginButton" layoutX="258.0" layoutY="246.0" onAction="#loginButtonEvent" mnemonicParsing="false" prefHeight="42.0" prefWidth="69.0" text="Login" />
+                <Label layoutX="256.0" layoutY="14.0" prefHeight="74.0" prefWidth="102.0" text="PHOTOS">
+                    <font>
+                        <Font name="Microsoft PhagsPa Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="204.0" layoutY="88.0" prefHeight="74.0" prefWidth="222.0" text="Please Login With Your Username">
+                    <font>
+                        <Font name="Microsoft PhagsPa" size="14.0" />
+                    </font>
+                </Label>
+                <Button fx:id="quitButton" layoutX="258.0" layoutY="308.0" onAction="#quitButtonEvent" mnemonicParsing="false" prefHeight="42.0" prefWidth="70.0" text="Quit" />
+                <TextField fx:id="userNameTextField" promptText="Enter Username" layoutX="301.0" layoutY="184.0" prefHeight="26.0" prefWidth="149.0" />
+                <Label layoutX="204.0" layoutY="176.0" prefHeight="42.0" prefWidth="79.0" text="Username :">
+                    <font>
+                        <Font name="Microsoft PhagsPa" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

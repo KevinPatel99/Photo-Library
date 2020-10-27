@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane  fx:id = "rootPane" prefHeight="476.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.UserSubsystemController">
+   <children>
+      <ListView fx:id="albumList" layoutX="20.0" layoutY="14.0" prefHeight="342.0" prefWidth="370.0" />
+      <Button fx:id="openAlbumButton" onAction="#openAlbumEvent" layoutX="409.0" layoutY="78.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="94.0" text="Open Album" />
+      <Button fx:id="createAlbumButton" onAction="#createAlbumEvent" layoutX="409.0" layoutY="143.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="94.0" text="Create Album" />
+      <Button fx:id="deleteAlbumButton" onAction="#deleteAlbumEvent" layoutX="409.0" layoutY="207.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="94.0" text="Delete Album" />
+      <Button fx:id="renameAlbumButton" onAction="#renameAlbumEvent" layoutX="20.0" layoutY="373.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Rename Album" />
+      <Button fx:id="logoutButton" onAction="#logoutEvent" layoutX="512.0" layoutY="14.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="87.0" text="Logout" />
+      <Button fx:id="searchPhotoButton" onAction="#searchPhotoEvent" layoutX="355.0" layoutY="420.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="131.0" text="Search Photo" />
+      <Button fx:id="quitButton" onAction="#quitEvent" layoutX="504.0" layoutY="420.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="94.0" text="Quit" />
+      <TextField fx:id="renameAlbum" layoutX="143.0" layoutY="373.0" prefHeight="26.0" prefWidth="195.0" />
+   </children>
+</AnchorPane>
